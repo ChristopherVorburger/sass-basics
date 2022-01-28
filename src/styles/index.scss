@@ -1,0 +1,68 @@
+// On ajoute aussi une google font sympa qu'on applique sur le body
+// Adding a cool google font
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Spartan:wght@300;500;700&display=swap');
+
+
+// On crée nos variables avec des noms qui parlent !
+// Creating variables with consistent names 
+
+// Couleurs principales
+$blue-primary: #326dee;
+$blue-secondary: #7876df;
+
+// Utilitaires couleurs
+$light-background: lightgrey;
+$green-success: #1ac888;
+$red-error: #d32752;
+$yellow-info: #f6c31c;
+
+// Espacements
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// Bordures
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
+// Puis on utilise nos variables de cette façon
+// Then we use our variables like this 
+
+body {
+  background-color: $light-background;
+  font-family: Spartan;
+}
+
+h1 {
+  color: $blue-primary;
+}
+
+button {
+  color: white;
+  border: 0;
+  background: $blue-primary;
+
+  border-radius: $base-border-radius;
+  padding: $base-padding;
+}
+
+.error {
+  color: $red-error;
+  border-color: $red-error;
+  border-style: solid;
+
+  margin: $base-margin;
+  padding: $base-padding;
+  border-radius: $base-border-radius;
+  border-width: $base-border-thickness;
+}
+
+.notification {
+  color: $green-success;
+  border-color: $green-success;
+  border-style: solid;
+
+  margin: $base-margin;
+  padding: $base-padding;
+  border-radius: $base-border-radius;
+  border-width: $base-border-thickness;
+}
