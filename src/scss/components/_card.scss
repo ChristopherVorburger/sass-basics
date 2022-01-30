@@ -1,5 +1,9 @@
-@use '../abstracts/colors' as *;
-@use '../abstracts/variables' as *;
+// Old imports :
+// @use '../abstracts/colors' as *;
+// @use '../abstracts/variables' as *;
+
+// New import
+@use '../abstracts' as *;
 
 .card {
   color: $blue-secondary;

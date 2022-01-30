@@ -1,8 +1,7 @@
-@use '../abstracts/colors' as *;
+@use '../abstracts' as *;
 
 body {
   // With @use we must specify the name of the partial or rename (name-spacing)
   background-color: $light-background;
   font-family: Spartan;
 }
-

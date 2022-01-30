@@ -1,4 +1,8 @@
-@use 'base/typography';
-@use 'base/base';
+// Variables, colors, functions, mixins...
+@use 'abstracts';
 
+// Low-level styles
+@use 'base';
+
+// Components
 @use 'components/card'
