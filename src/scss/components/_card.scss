@@ -1,0 +1,12 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/variables' as *;
+
+.card {
+  color: $blue-secondary;
+  border-color: $green-success;
+  border-style: solid;
+  margin: $base-margin;
+  padding: $base-padding;
+  border-radius: $base-border-radius;
+  border-width: $base-border-thickness;
+}
