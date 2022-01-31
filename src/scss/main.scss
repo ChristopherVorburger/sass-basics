@@ -1,8 +1,8 @@
-// Variables, colors, functions, mixins...
-@use 'abstracts';
+// Variables, colors, functions, mixins, ect.
+@use "abstracts";
 
 // Low-level styles
-@use 'base';
+@use "base";
 
 // Components
-@use 'components/card'
+@use "components/card";

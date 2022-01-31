@@ -1,16 +1,38 @@
-// Old imports :
-// @use '../abstracts/colors' as *;
-// @use '../abstracts/variables' as *;
-
-// New import
-@use '../abstracts' as *;
+@use "../abstracts" as *;
+@use "../base" as *;
 
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 500px;
   color: $blue-secondary;
-  border-color: $green-success;
-  border-style: solid;
+  border: $base-border-thickness solid $green-success;
   margin: $base-margin;
   padding: $base-padding;
   border-radius: $base-border-radius;
-  border-width: $base-border-thickness;
+  box-shadow: $base-box-shadow;
+
+  // Here, & means .card
+  &__title {
+    color: $pink-sunset;
+  }
+
+  // Here, & means .card
+  &__image {
+    width: 95%;
+    border-radius: $base-border-radius;
+  }
+
+  // Here, & means .card
+  &__comment {
+    font-size: $font-size-lg;
+    text-align: center;
+
+    // Here, & means .card__comment
+    &--link {
+      // Suppression du soulignement du lien
+      text-decoration: none;
+    }
+  }
 }

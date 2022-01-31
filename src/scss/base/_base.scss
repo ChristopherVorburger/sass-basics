@@ -1,7 +1,10 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 body {
   // With @use we must specify the name of the partial or rename (name-spacing)
   background-color: $light-background;
   font-family: Spartan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

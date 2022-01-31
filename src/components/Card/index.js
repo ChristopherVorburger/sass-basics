@@ -1,12 +1,17 @@
-import React from 'react';
-import image from '../../images/sunset.jpg'
+import React from "react";
+import image from "../../images/sunset.jpg";
 
 const Card = () => {
- return (
+  return (
     <div className="card">
-      <h1>Card title</h1>
-      <img src={image} alt="sunset" width="300" />
-      <p>Card comment</p>
+      <h1 className="card__title">Sunset 🌞</h1>
+      <img className="card__image" src={image} alt="sunset" />
+      <p className="card__comment">
+        Beautiful sunset at{" "}
+        <a className="card__comment--link" href="https://bakonationalpark.com">
+          Bako national Park
+        </a>
+      </p>
     </div>
   );
 };
