@@ -8,8 +8,6 @@ body {
 
 .App {
   // Apply flex-center from _extends.scss partial
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center;
   flex-wrap: wrap;
 }

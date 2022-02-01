@@ -1,0 +1,5 @@
+@mixin absolute-element($top, $right) {
+  position: absolute;
+  top: $top;
+  right: $right;
+}

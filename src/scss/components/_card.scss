@@ -6,13 +6,12 @@
 
 .card {
   // Apply flex-center from _extends.scss partial
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center;
   flex-direction: column;
+  position: relative;
   max-width: 450px;
   color: $blue-secondary;
-  border: $base-border-thickness solid $green-success;
+  border: $base-border-thickness solid $pink-sunset;
   margin: $base-margin;
   padding: $base-padding;
   border-radius: $base-border-radius;
@@ -45,5 +44,14 @@
     &--link {
       text-decoration: none;
     }
+  }
+  // Using mixin element
+  &__like {
+    @include absolute-element(20px, 70px);
+  }
+
+  // Using mixin element
+  &__share {
+    @include absolute-element(21px, 30px);
   }
 }

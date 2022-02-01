@@ -1,11 +1,16 @@
 import React from "react";
 import fakeData from "../../fakeData";
+// Import icons from react-icons
+import { FcLike } from "react-icons/fc";
+import { BsFillShareFill } from "react-icons/bs";
 
 const Card = () => {
-  // Using function .map to create componants Card with fakeData
   return fakeData.map((card) => {
     return (
-      <div className="card">
+      <div className="card" key={card.title}>
+        {/* Using icons with a suitable size*/}
+        <FcLike className="card__like" size={30} />
+        <BsFillShareFill className="card__share" size={30} />
         <h1 className="card__title">
           {card.title} {card.emoji}
         </h1>
