@@ -4,7 +4,12 @@ body {
   // With @use we must specify the name of the partial or rename (name-spacing)
   background-color: $light-background;
   font-family: Spartan;
+}
+
+.App {
+  // Apply flex-center from _extends.scss partial
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }

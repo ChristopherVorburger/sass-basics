@@ -1,17 +1,28 @@
 @use "../abstracts" as *;
 @use "../base" as *;
 
+// Import Math module
+@use "sass:math";
+
 .card {
+  // Apply flex-center from _extends.scss partial
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  max-width: 500px;
+  flex-direction: column;
+  max-width: 450px;
   color: $blue-secondary;
   border: $base-border-thickness solid $green-success;
   margin: $base-margin;
   padding: $base-padding;
   border-radius: $base-border-radius;
   box-shadow: $base-box-shadow;
+  transition: transform 0.25s ease-in;
+  &:hover {
+    border: $base-border-thickness solid $blue-primary;
+    transform: scale(1.02);
+    transition: transform 0.5s ease-out;
+  }
 
   // Here, & means .card
   &__title {
@@ -21,7 +32,8 @@
   // Here, & means .card
   &__image {
     width: 95%;
-    border-radius: $base-border-radius;
+    // math.div(amount, factor)
+    border-radius: math.div($base-border-radius, 2);
   }
 
   // Here, & means .card
@@ -31,7 +43,6 @@
 
     // Here, & means .card__comment
     &--link {
-      // Suppression du soulignement du lien
       text-decoration: none;
     }
   }

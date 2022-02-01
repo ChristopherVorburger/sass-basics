@@ -1,19 +1,28 @@
 import React from "react";
-import image from "../../images/sunset.jpg";
+import fakeData from "../../fakeData";
 
 const Card = () => {
-  return (
-    <div className="card">
-      <h1 className="card__title">Sunset 🌞</h1>
-      <img className="card__image" src={image} alt="sunset" />
-      <p className="card__comment">
-        Beautiful sunset at{" "}
-        <a className="card__comment--link" href="https://bakonationalpark.com">
-          Bako national Park
-        </a>
-      </p>
-    </div>
-  );
+  // Using function .map to create componants Card with fakeData
+  return fakeData.map((card) => {
+    return (
+      <div className="card">
+        <h1 className="card__title">
+          {card.title} {card.emoji}
+        </h1>
+        <img className="card__image" src={card.picture_path} alt="sunset" />
+        <p className="card__comment">
+          <a
+            className="card__comment--link"
+            href={card.link}
+            target="_blank"
+            rel="noreferrer"
+          >
+            {card.comment}
+          </a>
+        </p>
+      </div>
+    );
+  });
 };
 
 export default Card;

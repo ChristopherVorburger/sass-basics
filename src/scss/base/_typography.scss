@@ -3,6 +3,6 @@
 
 // Font sizes
 $main-font-size: 1rem;
-// We can use the function calc to calculate new values
+// Using calc() function to do calculations
 $font-size-sm: calc($main-font-size * 0.75);
 $font-size-lg: calc($main-font-size * 1.25);
