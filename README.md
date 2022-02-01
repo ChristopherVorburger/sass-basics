@@ -12,4 +12,7 @@ Install dependencies with `npm i`.
 
 Then
 
+[Link to the course in French](https://great-root-073.notion.site/SASS-4b3a538b7bd94972866df98f54ecf73b)
+
+
 ### `npm start`
